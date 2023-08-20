@@ -1,7 +1,6 @@
-let data; // Declare data variable globally
 
 // Fetch data from local server
-fetch('http://localhost:5000/')
+fetch('http://localhost:5000/api/v1.0/json_data')
   .then(response => response.json())
   .then(dataResponse => {
     data = dataResponse; // Assign fetched data to the global variable
