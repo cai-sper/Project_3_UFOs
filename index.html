@@ -13,7 +13,7 @@
     crossorigin="" />
 
   <!-- Our CSS -->
-  <link rel="stylesheet" type="text/css" href="Leaflet-Part-1/static/css/style.css">
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 
 <body>
@@ -21,13 +21,27 @@
   <!-- The div that holds our map -->
   <div id="map"></div>
 
+  <!-- The div that holds the controls (dropdown) -->
+  <div id="controls">
+    <label for="yearSelector">Select Year(s):</label>
+    <select id="yearSelector" multiple>
+      <option value="all">All Years</option>
+      <!-- Options will be populated dynamically using JavaScript -->
+    </select>
+  </div>
+
+  <!-- The div that holds our Plotly visualization -->
+  <div id="yearlyBar"></div>
+
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
   <!-- D3 JavaScript -->
   <script src="https://d3js.org/d3.v7.min.js"></script>
-  <!-- Our JavaScript -->
+  <!-- Plotly JavaScript -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Your JavaScript -->
   <script type="text/javascript" src="static/js/logic.js"></script>
 </body>
 
