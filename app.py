@@ -46,7 +46,7 @@ def yearly_comparison():
 
 # a route where we will display a welcome message via an HTML template
 @app.route("/api/v1.0/map")
-def yearly_comparison():
+def map():
     return render_template('map.html')
 
 # Run Flask
