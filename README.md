@@ -1,4 +1,4 @@
-# Project_3_UFO
+# Project 3 UFO
 
 ## Project Intro/Objective
 
