@@ -1,6 +1,4 @@
-# Project Name
-
-Project_3_UFO
+# Project_3_UFO
 
 ## Project Intro/Objective
 
