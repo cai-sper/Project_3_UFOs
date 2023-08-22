@@ -1,9 +1,9 @@
-
 // Fetch data from local server
 fetch('http://localhost:5000/api/v1.0/json_data')
   .then(response => response.json())
   .then(dataResponse => {
     data = dataResponse; // Assign fetched data to the global variable
+    console.log(data)
     
     // Process data to get unique years
     const uniqueYears = getUniqueYears(data);

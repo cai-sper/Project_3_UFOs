@@ -27,7 +27,8 @@ def welcome():
         "Available Routes:<br/>"
         "<a href='/api/v1.0/json_data'>/api/v1.0/json_data</a><br/>"
         "<a href='/api/v1.0/yearly_comparison'>/api/v1.0/yearly_comparison</a><br/>"
-        # "<a href='/api/v1.0/monthly_comparison'>/api/v1.0/monthly_comparison</a><br/>"
+        "<a href='/api/v1.0/monthly_comparison'>/api/v1.0/monthly_comparison</a><br/>"
+        "<a href='/api/v1.0/map'>/api/v1.0/map</a><br/>"
     )
 
 # Create a route that returns the data from the MongoDB as JSON
