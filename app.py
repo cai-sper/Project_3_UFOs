@@ -22,13 +22,42 @@ app = Flask(__name__)
 
 @app.route("/")
 def welcome():
-    return(
-         "Welcome to Project 3_UFO!<br/><br/>"
-        "Available Routes:<br/>"
-        "<a href='/api/v1.0/map'>/api/v1.0/map</a><br/>"
-        "<a href='/api/v1.0/yearly_comparison'>/api/v1.0/yearly_comparison</a><br/>"
-        "<a href='/api/v1.0/monthly_comparison'>/api/v1.0/monthly_comparison</a><br/>"
-    )
+    return """
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Welcome to Project 3_UFO!</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #f4f4f4;
+            }
+            .container {
+                margin-top: 100px;
+            }
+            .route-link {
+                display: block;
+                margin: 10px;
+                font-size: 18px;
+                color: #007bff;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Project 3_UFO!</h1>
+            <p>Explore UFO data through various API endpoints:</p>
+            <a class="route-link" href="/api/v1.0/map">View UFO Map</a>
+            <a class="route-link" href="/api/v1.0/yearly_comparison">Yearly Comparison</a>
+            <a class="route-link" href="/api/v1.0/monthly_comparison">Monthly Comparison</a>
+        </div>
+    </body>
+    </html>
+    """
 
 
 @app.route("/api/v1.0/map", methods=['GET'])
