@@ -80,7 +80,7 @@ def yearly_comparison():
 
 
 @app.route("/api/v1.0/monthly_comparison")
-def map():
+def monthly_comparison():
     return render_template('monthly.html')
 
 
