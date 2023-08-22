@@ -33,7 +33,7 @@ fetch('http://localhost:5000/api/v1.0/json_data')
 
       // Check if latitude and longitude are valid
       if (lat !== undefined && lon !== undefined) {
-        markers.addLayer(L.marker([lat, lon]).bindPopup("Popup content"));
+        markers.addLayer(L.marker([lat, lon]).bindPopup("Alien encounter"));
 
         // Push data to respective arrays
         latitude.push(lat);
