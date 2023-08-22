@@ -5,13 +5,16 @@ body, html {
 }
 
 /* Set height for the map and chart containers */
-#map, #yearlyBar {
+#yearlyBar {
   height: calc(50vh - 40px); /* Adjust this value as needed */
+  margin-bottom: 20px
 }
 
-/* Add some space below the chart */
-#yearlyBar {
-  margin-bottom: 20px;
+/* Map styling */
+#map,
+body,
+html {
+  height: 100%;
 }
 
 /* Style for the controls (dropdown) */
