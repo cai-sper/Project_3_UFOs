@@ -97,8 +97,9 @@ let layout = {
   title: "Months"
  },
  yaxis: {
+  autorange: true,
   title: "Number of sightings",
-  range: [Math.min(...counted_months_filtered) - 500, Math.max(...counted_months_filtered) + 750]
+  range: [Math.min(...counted_months_filtered), Math.max(...counted_months_filtered)]
 },
 };
 
@@ -125,8 +126,9 @@ let layout = {
   title: "Months"
  },
  yaxis: {
+  autorange: true,
   title: "Number of sightings",
-  range: [Math.min(...counted_months) - 500, Math.max(...counted_months) + 750]
+  range: [Math.min(...counted_months), Math.max(...counted_months)]
 },
 };
 
